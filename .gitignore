@@ -1,5 +1,9 @@
+# MY FIT Config Files
+*.config.js
+
 # Apple files
 .DS_Store
+
 # Logs
 logs
 *.log
