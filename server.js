@@ -24,7 +24,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 const mangoUrl = process.env.MANGODB_URL 
-
 db.mongoose
 .connect(db.url, {
     useNewUrlParser: true,
