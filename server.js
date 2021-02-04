@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 const mangoUrl = process.env.MANGODB_URL 
-
+console.log(mangoUrl);
 mongoose.connect(mangoUrl, {
     useNewUrlParser: true,
     useUnifiedTopology: true
