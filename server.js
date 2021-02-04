@@ -6,10 +6,6 @@ const app = express();
 
 //connexion a mangoDb
 const db = require("./app/models");
-/*
-module.exports = {
-  url: "mongodb+srv://root:toor@cluster1.9jij8.mongodb.net/MyFit?retryWrites=true&w=majority"
-};*/
 
 
 var corsOptions = {
