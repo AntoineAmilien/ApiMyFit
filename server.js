@@ -5,7 +5,7 @@ const cors = require("cors");
 const app = express();
 
 //connexion a mangoDb
-const db = require("./app/models");
+//const db = require("./app/models");
 
 var corsOptions = {
   origin: "*"
@@ -18,8 +18,8 @@ app.use(bodyParser.json());
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
 
-db.mongoose
-  .connect(db.url, {
+const mangoUrl = process.env.MANGODB_URL 
+mongoose.connect(mangoUrl, {
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
